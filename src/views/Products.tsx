@@ -2,7 +2,6 @@ import { Link, useLoaderData, type ActionFunctionArgs } from "react-router-dom"
 import { getProducts, updateProductAvailability } from "../services/ProductService"
 import ProductDetails from "../components/ProductDetails"
 import type { Product } from "../types"
-import { object } from "valibot"
 
 export async function loader(){
   const products = await getProducts()
